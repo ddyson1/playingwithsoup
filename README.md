@@ -1,4 +1,4 @@
-## playignwithsoup
+## playingwithsoup
 
 > pip3 install virtualenv
 
