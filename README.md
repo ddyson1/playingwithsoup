@@ -9,6 +9,7 @@ change directory into project folder
 activate your virtual environment to keep things clean
 
 >virtualenv venv
+
 >source venv/bin/activate
 
 (venv) should appear
@@ -16,8 +17,11 @@ activate your virtual environment to keep things clean
 install your dependencies for venv
 
 >pip3 install beautifulsoup4
+
 >pip3 install lxml
+
 >pip3 install requests
+
 >pip3 install gTTS
 
 run the scripts!
