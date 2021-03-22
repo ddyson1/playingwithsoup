@@ -1,6 +1,6 @@
 ## playingwithsoup
 
-### Installation
+### installation
 
 > $ pip3 install virtualenv
 
@@ -26,7 +26,7 @@ install your dependencies for venv
 
 > $ pip3 install gTTS
 
-run the scripts!
+### run the scripts!
 
 > $ python3 soup.py
 
