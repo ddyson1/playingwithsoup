@@ -1,20 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-cities = ["Boston", "NYC", "Weston"]
-print(cities)
-
-city = input("Pick a city from the array above to hear the weekly forecast for that city: ")
-
-if city == cities[0]:
-    page = requests.get("https://forecast.weather.gov/MapClick.php?lat=42.3587&lon=-71.0567#.YFfPbGRKhro")
-elif city == cities[1]:
-    page = requests.get("https://forecast.weather.gov/MapClick.php?lat=40.7146&lon=-74.0071#.YFgJXmRKhro")
-elif city == cities[2]:
-    page = requests.get("https://forecast.weather.gov/MapClick.php?lat=41.2244&lon=-73.383")
-else:
-    print("The city you entered is not on the list. Defaulting to Boston, MA")
-    page = requests.get("https://forecast.weather.gov/MapClick.php?lat=42.3587&lon=-71.0567#.YFfPbGRKhro")
+page = requests.get("https://forecast.weather.gov/MapClick.php?lat=42.3587&lon=-71.0567#.YFfPbGRKhro")
 
 # page = requests.get("https://forecast.weather.gov/MapClick.php?lat=42.3587&lon=-71.0567#.YFfPbGRKhro")
 
@@ -50,6 +37,6 @@ for i in range(len(forecast)):
 for i in range(len(weekly)):
     print(weekly[i].string + "." + " " + weather[i].string)
     desc = weekly[i].string + "." + " " + weather[i].string
-    speech = gTTS(text = desc, slow = False)
+    speech = gTTS(text = desc, lang = "en", tld = "ie", slow = False)
     speech.save("desc.mp3")
     os.system("afplay desc.mp3")
