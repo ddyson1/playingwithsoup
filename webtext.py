@@ -12,6 +12,7 @@ text = nltk.Text(tokens)
 
 text.concordance('MIT')
 
+"""
 def freq_words(url, freqdist, n):
     html = request.urlopen(url).read().decode('utf8')
     raw = BeautifulSoup(html, 'html.parser').get_text()
@@ -21,3 +22,4 @@ def freq_words(url, freqdist, n):
     for word, count in freqdist.most_common(n):
         result = result + [word]
     print(result)
+"""

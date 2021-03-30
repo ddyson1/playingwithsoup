@@ -43,8 +43,16 @@ print(lexical_diversity(benjamin))
 # print(FreqDist(meditations).most_common(50))
 # FreqDist(meditations).plot(50, cumulative=True)
 
+"""
 print(wn.synsets('virtue'))
 
 print(wn.synset('virtue.n.01').lemma_names())
 print(wn.synset('virtue.n.01').definition())
 print(wn.synset('virtue.n.01').examples())
+"""
+
+# print(meditations.collocations())
+
+# print(FreqDist(meditations).most_common(60))
+
+# meditations.dispersion_plot(["virtue","morality","duty","nature","humanity"])
